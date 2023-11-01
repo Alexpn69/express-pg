@@ -1,6 +1,6 @@
 # @format
 
-name: Test App
+name: Deploy App
 on: push
 jobs:
     test:
