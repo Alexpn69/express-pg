@@ -8,7 +8,7 @@ jobs:
         run: echo Hello Alex!
       - name: Print a few lines
         run: |
-          Echo first
-          Echo second
+          echo first
+          echo second
           
     
