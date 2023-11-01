@@ -3,32 +3,32 @@
 name: Deploy App
 on: push
 jobs:
-    test:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Get the repo code
-            uses: actions/checkout@v4
-            - name: Install deps
-            run: npm ci
-            - name: Test app
-            run: npm run test
-    lint:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Get the repo code
-            uses: actions/checkout@v4
-            - name: Install deps
-            run: npm ci
-            - name: Lint app
-            run: npm run lint
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Get the repo code
-            uses: actions/checkout@v4
-            - name: Install deps
-            run: npm ci
-            - name: Build app
-            run: npm run build
-            - name: Deploy
-            run: echo Deploi...
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the repo code
+        uses: actions/checkout@v4
+      - name: Install deps
+        run: npm ci
+      - name: Test app
+        run: npm run test
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the repo code
+        uses: actions/checkout@v4
+      - name: Install deps
+        run: npm ci
+      - name: Lint app
+        run: npm run lint
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the repo code
+        uses: actions/checkout@v4
+      - name: Install deps
+        run: npm ci
+      - name: Build app
+        run: npm run build
+      - name: Deploy
+        run: echo Deploi...
