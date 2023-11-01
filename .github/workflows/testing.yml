@@ -1,13 +1,14 @@
+# @format
+
 name: Test App
 on: push
 jobs:
-  runs-on: ubuntu-latest
-  steps: 
-    - name: Get the repo code
-      uses: actions/checkout@v4
-    - name: Install deps
-      run: npm ci
-    - name: Test app
-      run: npm run test
-      
-      
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the repo code
+        uses: actions/checkout@v4
+      - name: Install deps
+        run: npm ci
+      - name: Test app
+        run: npm run test
